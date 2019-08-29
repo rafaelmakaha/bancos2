@@ -47,11 +47,11 @@ select p.idVenda, v.dtVenda, p.codigo, pr.nome, p.quantidade, pr.precoUnitario, 
 Mostrar todos os empregados da empresa que não sejam 
 gerentes em ordem alfabética crescente;
 */
-select * 
-    from PESSOA p 
-    inner join EMPREGADO e on p.cpf=e.cpf
-    left join telefone t on t.matricula = e.matricula
-    order by p.nome ASC;
+select p.nome, p.cpf, e.matricula
+    from EMPREGADO e
+    inner join PESSOA p on e.cpf = p.cpf
+    left join GERENTE g on g.cpf = p.cpf;
+    order by p.nome;
 
 /* Consulta D
 Consultar e mostrar a quantidade de CADA produto 
