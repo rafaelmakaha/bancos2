@@ -50,4 +50,4 @@ FROM CIDADE AS c
 INNER JOIN ESTADO AS e
     ON c.sigla = e.sigla
 WHERE e.sigla = 'RJ'
-ORDER BY c.nome;
+ORDER BY e.nome, c.nome;
