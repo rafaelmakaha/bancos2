@@ -49,5 +49,5 @@ SELECT e.nome as Estado, e.sigla, c.nome as Cidade, habitantes
 FROM CIDADE AS c
 INNER JOIN ESTADO AS e
     ON c.sigla = e.sigla
-WHERE e.sigla = 'RJ'
+WHERE e.sigla IN ('RJ', 'SP')
 ORDER BY e.nome, c.nome;
