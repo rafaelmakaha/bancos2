@@ -18,9 +18,9 @@
 -- Administrador: possui todos os privil�gios sobre essa base de dados somente:
 
 CREATE USER 'ana_carolina' IDENTIFIED BY 'anacarol123';
-GRANT ALL PRIVILEGES ON aula1exer2Evolucao3.* TO ana_carolina;
+GRANT ALL PRIVILEGES ON aula1exer2Evolucao4.* TO ana_carolina;
 
 -- Usuario: possui todos os privil�gios de consulta de dados sobre a base de dados desse projeto somente:
 
 CREATE USER 'raphael_carvalho' IDENTIFIED BY 'raphael123';
-GRANT SELECT, USAGE ON aula1exer2Evolucao3.* TO raphael_carvalho;
+GRANT SELECT, USAGE ON aula1exer2Evolucao4.* TO raphael_carvalho;
