@@ -1,5 +1,9 @@
 /* Lógico_1: */
 
+CREATE IF NOT EXISTS  ;
+
+USE exer01aula03;
+
 CREATE TABLE PLANTONISTA (
     sexo ENUM('M','F'),
     nome VARCHAR(50),
