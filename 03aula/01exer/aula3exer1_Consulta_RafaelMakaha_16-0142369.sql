@@ -24,10 +24,10 @@ USE exer01aula03;
 -- especialidades
 
 CREATE VIEW ESPECIALIDADE_SETOR (Setor, Quantidade_Plantonista) AS
-    SELECT e
+    SELECT s.nome, count(p.matricula)
     FROM PLANTONISTA p
     INNER JOIN possui po ON po.matricula = p.matricula
-    INNER JOIN ESPECIALIDADE_SETOR e ON e.idEspecialidade = po.idespecialidade
+    INNER JOIN ESPECIALIDADE e ON e.idEspecialidade = po.idespecialidade
     INNER JOIN trabalha t ON t.matricula = p.matricula
     INNER JOIN SETOR s ON s.idSetor = t.matricula
     WHERE s.nome <> e.nome
