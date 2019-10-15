@@ -1,11 +1,11 @@
--- --------     << aula3exer1EvolucaoOracle >>     ------------
+-- --------     << aula3exer1evolucao4 >>     ------------
 -- 
 --                    SCRIPT DE MANIPULACAO (DML)
 -- 
 -- date Criacao ...........: 07/10/2019
 -- Autor(es) ..............: Henrique Martins de Messias
 -- Banco de Dados .........: Oracle
--- Base de Dados(nome) ....: aula3exer1EvolucaoOracle
+-- Base de Dados(nome) ....: aula3exer1evolucao4
 -- 
 -- date Ultima Alteracao ..: 07/10/2019
 --   => Criacao da View
@@ -21,5 +21,5 @@
 -- View que mostra os horários ocupados por algum plantonista em cada setor
 CREATE OR REPLACE VIEW V_HORARIOS (setor, datahora, plantonista) AS
 SELECT s.nomeSetor, a.datahora, p.nome
-FROM HMM_SETOR s JOIN HMM_alocado a ON a.idSetor = s.idSetor JOIN HMM_PLANTONISTA p ON a.matricula = p.matricula
+FROM SETOR s JOIN alocado a ON a.idSetor = s.idSetor JOIN PLANTONISTA p ON a.matricula = p.matricula
 ORDER BY s.nomeSetor, a.datahora, p.nome;

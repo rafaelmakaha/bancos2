@@ -1,11 +1,11 @@
--- --------     << aula3exer1EvolucaoOracle >>     ------------
+-- --------     << aula3exer1evolucao4 >>     ------------
 -- 
 --                    SCRIPT DE MANIPULACAO (DML)
 -- 
 -- date Criacao ...........: 07/10/2019
 -- Autor(es) ..............: Henrique Martins de Messias
 -- Banco de Dados .........: Oracle
--- Base de Dados(nome) ....: aula3exer1EvolucaoOracle
+-- Base de Dados(nome) ....: aula3exer1evolucao4
 -- 
 -- date Ultima Alteracao ..: 07/10/2019
 --   => Criacao das instrucoes DROP
@@ -17,7 +17,7 @@
 --         => 03 Sequences
 -- 
 -- -----------------------------------------------------------------
-DROP TABLE HMM_alocado;
-DROP TABLE HMM_PLANTONISTA;
-DROP TABLE HMM_ESPECIALIDADE;
-DROP TABLE HMM_SETOR;
+DROP TABLE alocado;
+DROP TABLE PLANTONISTA;
+DROP TABLE ESPECIALIDADE;
+DROP TABLE SETOR;
