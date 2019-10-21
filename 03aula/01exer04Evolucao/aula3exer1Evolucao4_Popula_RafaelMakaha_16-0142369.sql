@@ -19,24 +19,24 @@
 
 USE aula3exer1evolucao4;
 
-INSERT INTO ESPECIALIDADE (idEspecialidade, tipoEspecialidade) VALUES
-    (0, 'Enfermeiro Geral'),
-    (1, 'Acupuntura'),
-    (2, 'Alergia e Imunologia'),
-    (3, 'Anestesiologia'),
-    (4, 'Angiologia'),
-    (5, 'Cancerologia'),
-    (6, 'Urologia');
+INSERT INTO ESPECIALIDADE (tipoEspecialidade) VALUES
+    ('Enfermeiro Geral'),
+    ('Acupuntura'),
+    ('Alergia e Imunologia'),
+    ('Anestesiologia'),
+    ('Angiologia'),
+    ('Cancerologia'),
+    ('Urologia');
 
-INSERT INTO SETOR (idSetor, nomeSetor) VALUES
-    (1, 'Acupuntura'),
-    (2, 'Anestesiologia'),
-    (3, 'Urologia');
+INSERT INTO SETOR (nomeSetor) VALUES
+    ('Acupuntura'),
+    ('Anestesiologia'),
+    ('Urologia');
 
-INSERT INTO PLANTONISTA (matricula, nome, sexo) VALUES
-    (1, 'João Silva da Silva', 'M'),
-    (2, 'Maria Souza da Silva', 'F'),
-    (3, 'João Pedro Alves', 'M');
+INSERT INTO PLANTONISTA (nome, sexo) VALUES
+    ('João Silva da Silva', 'M'),
+    ('Maria Souza da Silva', 'F'),
+    ('João Pedro Alves', 'M');
 
 INSERT INTO alocado (idSetor, matricula, datahora) VALUES
     (1, 2, '2019-09-03 08:00:00'),
